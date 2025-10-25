@@ -1,0 +1,375 @@
+@import url("https://fonts.cdnfonts.com/css/metropolis-2");
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: "Metropolis", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: rgb(00, 00, 00);
+	margin: 0;
+	padding: 8px;
+}
+
+.header {
+	background-color: transparent;
+	display: flex;
+	height: 75px;
+	flex-direction: row;
+	justify-content: space-between;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	padding: 0px 8px;
+}
+
+.search-section {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	height: max-content;
+	align-self: center;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 8px;
+}
+
+div.search-section form {
+	display: flex;
+}
+
+.end-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-self: center;
+	height: max-content;
+	justify-content: flex-end;
+	column-gap: 8px;
+	margin: 0;
+}
+
+.home-button {
+	background-color: rgb(34, 34, 34);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 48px;
+	width: 48px;
+	border: none;
+	border-radius: 50px;
+	padding: 8px;
+	margin: 0 0 0 18px;
+	transition: background-color ease-out 0.15s;
+}
+
+.home-button:hover {
+	background-color: rgb(52, 52, 52);
+}
+
+.browse-button {
+	background-color: rgb(34, 34, 34);
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	border: none;
+	border-radius: 50px;
+	padding: 0px 12px 0px 12px;
+	cursor: pointer;
+	transition: background-color ease-out 0.15s;
+}
+
+div.search-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 48px;
+	width: 48px;
+	padding: 0;
+}
+
+div.place-holder {
+	width: max-content;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	height: 24px;
+}
+
+span.place-holder-text {
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: 500;
+}
+
+.search-bar div input {
+	height: 48px;
+}
+
+.search-bar div {
+	display: flex;
+	align-items: center;
+}
+
+.search-bar-text {
+	background-color: transparent;
+	border: none;
+	font-size: 16px;
+	height: 24px;
+	width: 330px;
+	font-size: 16px;
+	font-weight: 600;
+	z-index: 2;
+	outline: none;
+	cursor: text;
+	color: rgb(255, 255, 255);
+}
+
+.search-bar {
+	display: flex;
+	background-color: rgb(34, 34, 34);
+	border-radius: 50px;
+	height: 48px;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	transition: border ease-out 0.15s, background-color ease-out 0.15s;
+}
+
+.search-bar:hover {
+	background-color: rgb(52, 52, 52);
+	.browse-button {
+		background-color: rgb(52, 52, 52);
+	}
+}
+
+.search-bar:focus-within {
+	border: 3px solid rgb(255, 255, 255);
+}
+
+.spotify-logo {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	height: 72px;
+	width: 72px;
+}
+
+.spotify-logo a {
+	display: flex;
+	position: absolute;
+	margin: 20px;
+	align-items: center;
+}
+
+.premium-button,
+.support-button,
+.download-button,
+.install-button,
+.signup-button,
+.login-button {
+	background: none;
+	color: rgb(155, 155, 155);
+	border: none;
+	padding: 0px 12px 0px 12px;
+	cursor: pointer;
+	padding: 0;
+	font-weight: 700;
+}
+
+.premium-button:hover,
+.support-button:hover,
+.download-button:hover,
+.install-button:hover,
+.signup-button:hover,
+.home-button:hover {
+	color: rgb(255, 255, 255);
+	transform: scale(1.03);
+	transition: all 0.15s;
+}
+
+.login-button:hover {
+	transform: scale(1.03);
+	transition: all 0.15s;
+}
+
+.install-button,
+.signup-button {
+	font-size: 14px;
+}
+
+.login-button {
+	background-color: rgb(250, 250, 250);
+	border-radius: 50px;
+	font-size: 16px;
+	height: 48px;
+	color: rgb(00, 00, 00);
+	padding: 8px 32px;
+}
+
+.signup-button {
+	padding: 4px 16px 4px 8px;
+}
+
+.premium-button,
+.support-button,
+.download-button {
+	font-size: 16px;
+	padding: 8px 0px;
+}
+
+.separator {
+	width: 1px;
+	height: 25px;
+	background-color: rgb(255, 255, 255);
+	margin: 0px 16px;
+}
+
+.install-button span.install-img-span {
+	display: flex;
+	position: relative;
+	margin: 0px 8px 0px 0px;
+}
+
+.install-button span.install-text-span {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: baseline;
+	text-align: center;
+}
+
+.install-button {
+	display: inline-flex;
+	text-align: center;
+	align-items: center;
+	padding: 4px 16px 4px 0px;
+}
+
+div.side-bar {
+	display: flex;
+	flex-direction: column;
+	width: max-content;
+	row-gap: 50px;
+	box-sizing: border-box;
+	align-items: center;
+	height: max-content;
+	max-height: max-content;
+	background-color: rgb(18, 18, 18);
+	border-radius: 10px;
+	top: 75px;
+	position: fixed;
+}
+
+div.side-bar header {
+	display: flex;
+	height: 55px;
+	padding: 12px 16px 8px;
+}
+
+div.sidebar-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	height: 35px;
+}
+
+div.sidebar-header div {
+	display: flex;
+	align-items: center;
+}
+
+div.text-div {
+	margin-right: 250px;
+}
+
+h1.your-library {
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+}
+
+.create-playlist-button {
+	background-color: rgb(18, 18, 18);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 35px;
+	width: 35px;
+	border: none;
+	border-radius: 50px;
+	padding: 8px;
+	cursor: pointer;
+	transition: background-color ease-out 0.15s;
+}
+
+.create-playlist-button:hover {
+	background-color: rgb(34, 34, 34);
+}
+
+div.main-content {
+	display: flex;
+	background-color: rgb(18, 18, 18);
+	flex-direction: column;
+	padding: 0px 40px;
+	row-gap: 50px;
+	flex-grow: 1;
+	max-width: 1000px;
+	box-sizing: border-box;
+	align-items: center;
+	border-radius: 10px;
+	top: 75px;
+	left: 435px;
+	position: fixed;
+}
+
+section.trending-section,
+section.pop-artist-section,
+section.pop-album-section,
+section.pop-radio-section {
+	display: flex;
+	flex-direction: column;
+}
+
+div.trending-header,
+div.pop-artist-header,
+div.pop-album-header,
+div.pop-radio-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+h1.trending-songs,
+h1.pop-artists,
+h1.pop-albums,
+h1.pop-radio {
+	display: flex;
+	font-size: 24px;
+}
+
+h1 > a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+h1 > a:hover {
+	text-decoration: 2px underline rgb(255, 255, 255);
+}
+
+button.showall-button {
+	border: none;
+	font-weight: 700;
+	font-size: 14px;
+	color: rgb(155, 155, 155);
+	background-color: transparent;
+}
+
+button.showall-button:hover {
+	text-decoration: 1px underline rgb(255, 255, 255);
+}

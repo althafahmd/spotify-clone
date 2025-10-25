@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Spotify - Web Player: Music for everyone</title>
+
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="icon" href="assets/icons/spotify.png" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="spotify-logo">
+					<a href="#main">
+						<svg
+							fill="#FFFFFF"
+							width="32px"
+							height="32px"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="m17.61 16.906c0-.002 0-.004 0-.007 0-.34-.187-.636-.464-.791l-.005-.002c-1.922-1.131-4.235-1.8-6.703-1.8-.099 0-.197.001-.296.003h.015c-1.598.016-3.142.208-4.626.559l.142-.028c-.373.047-.659.363-.659.746 0 .024.001.047.003.07v-.003.012c0 .205.081.391.212.528.132.14.318.227.525.227.01 0 .021 0 .031-.001h-.001c.225-.034.42-.077.611-.133l-.032.008c1.136-.255 2.444-.407 3.786-.422h.01c.075-.002.164-.003.253-.003 2.193 0 4.246.599 6.005 1.642l-.054-.03c.146.097.323.159.513.172h.003.001c.405 0 .734-.328.734-.734 0-.006 0-.011 0-.017v.001zm1.5-3.36c0-.01 0-.021 0-.032 0-.395-.219-.74-.542-.918l-.005-.003c-2.358-1.387-5.195-2.207-8.223-2.207-.118 0-.237.001-.354.004h.018c-1.686.001-3.316.24-4.858.687l.123-.031c-.432.089-.753.466-.753.919 0 .029.001.057.004.085v-.004.004c0 .516.418.934.934.934h.004c.218-.028.414-.072.603-.131l-.024.007c1.168-.328 2.509-.516 3.894-.516h.027-.001c.099-.002.216-.004.334-.004 2.683 0 5.198.721 7.361 1.979l-.07-.038c.169.108.371.181.588.203h.006.004c.516 0 .934-.418.934-.934 0-.001 0-.003 0-.004zm1.69-3.874c.001-.015.001-.034.001-.052 0-.449-.251-.839-.62-1.039l-.006-.003c-1.32-.758-2.851-1.354-4.472-1.707l-.106-.019c-1.596-.372-3.429-.586-5.312-.586-.017 0-.034 0-.05 0h.003c-.084-.001-.184-.002-.284-.002-1.923 0-3.784.269-5.546.771l.142-.035c-.243.074-.448.214-.6.398l-.002.002c-.15.191-.241.436-.241.702 0 .02 0 .039.001.059v-.003.029c0 .305.122.582.321.784.196.203.471.328.775.328h.032-.002c.23-.02.443-.064.645-.131l-.02.006c1.359-.369 2.919-.58 4.529-.58.095 0 .19.001.285.002h-.014.044c1.699 0 3.352.194 4.939.56l-.147-.029c1.494.313 2.819.827 4.028 1.519l-.067-.035c.178.111.393.18.623.187h.002.01c.304 0 .579-.122.778-.32.205-.194.333-.469.333-.773 0-.012 0-.023-.001-.035v.002zm3.2 2.328v.09c0 2.187-.598 4.234-1.64 5.987l.03-.054c-1.067 1.824-2.544 3.301-4.311 4.337l-.056.03c-1.729 1.012-3.806 1.609-6.024 1.609s-4.295-.597-6.081-1.64l.057.031c-1.824-1.067-3.301-2.544-4.337-4.311l-.03-.056c-1.012-1.729-1.609-3.806-1.609-6.024s.597-4.295 1.64-6.081l-.031.057c1.067-1.824 2.544-3.301 4.311-4.337l.056-.03c1.729-1.012 3.806-1.609 6.024-1.609s4.295.597 6.081 1.64l-.057-.031c1.824 1.067 3.301 2.544 4.337 4.311l.03.056c1.012 1.699 1.61 3.746 1.61 5.933v.096-.005z"
+							/>
+						</svg>
+					</a>
+				</div>
+
+				<div class="search-section">
+					<button class="home-button">
+						<a href="#">
+							<svg
+								version="1.1"
+								id="Layer_1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="24px"
+								height="24px"
+								viewBox="0 0 100 100"
+								enable-background="new 0 0 100 100"
+								xml:space="preserve"
+							>
+								<path
+									d="M83.505,37.85L51.013,12.688c-0.915-0.707-2.197-0.698-3.1,0.025L16.46,37.874c-0.592,0.474-0.939,1.195-0.939,1.956v45.5
+	c0,1.385,1.121,2.505,2.505,2.505h18.697c1.382,0,2.505-1.121,2.505-2.505V57.471h21.54V85.33c0,1.385,1.123,2.505,2.505,2.505h18.7
+	c1.382,0,2.505-1.121,2.505-2.505v-45.5C84.479,39.055,84.119,38.324,83.505,37.85z"
+								/>
+							</svg>
+						</a>
+					</button>
+
+					<div class="search-bar">
+						<form action="">
+							<div class="search-icon">
+								<svg
+									width="24px"
+									height="24px"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z"
+									/>
+								</svg>
+							</div>
+
+							<div class="text-input">
+								<input class="search-bar-text" type="text" />
+								<div class="place-holder">
+									<span class="place-holder-text"
+										>What do you want to play?</span
+									>
+									<span></span>
+								</div>
+							</div>
+
+							<div>
+								<button class="browse-button">
+									<svg
+										width="24px"
+										height="24px"
+										viewBox="0 0 16 16"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M8.5 1a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13zm4.894 4a5.527 5.527 0 0 0-3.053-2.676c.444.84.765 1.74.953 2.676h2.1zm.582 2.995A5.11 5.11 0 0 0 14 7.5a5.464 5.464 0 0 0-.213-1.5h-2.342c.032.331.055.664.055 1a10.114 10.114 0 0 1-.206 2h2.493c.095-.329.158-.665.19-1.005zm-3.535 0l.006-.051A9.04 9.04 0 0 0 10.5 7a8.994 8.994 0 0 0-.076-1H6.576A8.82 8.82 0 0 0 6.5 7a8.98 8.98 0 0 0 .233 2h3.534c.077-.332.135-.667.174-1.005zM10.249 5a8.974 8.974 0 0 0-1.255-2.97C8.83 2.016 8.666 2 8.5 2a3.62 3.62 0 0 0-.312.015l-.182.015L8 2.04A8.97 8.97 0 0 0 6.751 5h3.498zM5.706 5a9.959 9.959 0 0 1 .966-2.681A5.527 5.527 0 0 0 3.606 5h2.1zM3.213 6A5.48 5.48 0 0 0 3 7.5 5.48 5.48 0 0 0 3.213 9h2.493A10.016 10.016 0 0 1 5.5 7c0-.336.023-.669.055-1H3.213zm2.754 4h-2.36a5.515 5.515 0 0 0 3.819 2.893A10.023 10.023 0 0 1 5.967 10zM8.5 12.644A8.942 8.942 0 0 0 9.978 10H7.022A8.943 8.943 0 0 0 8.5 12.644zM11.033 10a10.024 10.024 0 0 1-1.459 2.893A5.517 5.517 0 0 0 13.393 10h-2.36z"
+										/>
+									</svg>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="end-section">
+					<button class="premium-button">Premium</button>
+
+					<button class="support-button">Support</button>
+
+					<button class="download-button">Download</button>
+
+					<div class="separator"></div>
+
+					<a class="install-button">
+						<span class="install-img-span">
+							<svg
+								version="1.1"
+								id="Capa_1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								viewBox="-15 -15 350 450"
+								xml:space="preserve"
+							>
+								<g>
+									<g id="Arrow_Down_Circle">
+										<path
+											d="M192.485,0C86.185,0,0,86.173,0,192.485c0,106.3,86.185,192.485,192.485,192.485
+			c106.312,0,192.485-86.185,192.485-192.485C384.97,86.173,298.797,0,192.485,0z M192.485,360.909
+			c-93.018,0-168.424-75.406-168.424-168.424S99.467,24.061,192.485,24.061s168.424,75.406,168.424,168.424
+			S285.503,360.909,192.485,360.909z"
+										/>
+										<path
+											d="M268.095,209.243l-63.46,62.558V84.212c0-6.641-5.438-12.03-12.151-12.03c-6.713,0-12.151,5.39-12.151,12.03v187.589
+			l-63.46-62.558c-4.74-4.692-12.439-4.692-17.179,0c-4.74,4.704-4.74,12.319,0,17.011l84.2,82.997
+			c2.25,2.25,5.414,3.537,8.59,3.537c3.164,0,6.328-1.299,8.59-3.525l84.2-82.997c4.752-4.704,4.74-12.319,0-17.011
+			C280.535,204.551,272.835,204.551,268.095,209.243z"
+										/>
+									</g>
+									<g />
+									<g />
+									<g />
+									<g />
+									<g />
+									<g />
+								</g>
+							</svg>
+						</span>
+
+						<span class="install-text-span">Install App</span>
+					</a>
+
+					<button class="signup-button">Sign up</button>
+
+					<button class="login-button">Log in</button>
+				</div>
+			</nav>
+		</header>
+
+		<div class="main-container">
+			<aside>
+				<div class="side-bar">
+					<div class="sidebar-upper-section">
+						<div class="sidebar-header-container">
+							<div class="sidebar-header">
+								<div class="text-div">
+									<h1 class="your-library">Your Library</h1>
+								</div>
+
+								<div class="empty-container"></div>
+
+								<div>
+									<button class="create-playlist-button">
+										<img
+											src="assets/icons/plus-grayshade.png"
+											alt=""
+											width="16px"
+										/>
+									</button>
+								</div>
+							</div>
+
+							<div></div>
+						</div>
+
+						<div class="sidebar-scroll-div">
+							<div>
+								<div class="sidebar-info-div">
+									<div></div>
+
+									<section class="sidebar-info-container">
+										<div>
+											<span>Create your first playlist</span>
+											<span>It's easy, we'll help you</span>
+										</div>
+
+										<div>
+											<button class="playlist-button">
+												<span> Create playlist </span>
+											</button>
+										</div>
+									</section>
+
+									<section class="sidebar-info-container">
+										<div>
+											<span>Let's find some podcasts to follow</span>
+											<span>We'll keep you updated on new episodes</span>
+										</div>
+
+										<div>
+											<button class="podcasts-button">
+												<span> Browse podcasts </span>
+											</button>
+										</div>
+									</section>
+
+									<div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="sidebar-footer">
+						<span></span>
+
+						<div class="sidebar-footer-link-container">
+							<div class="sidebar-footer-links-list">
+								<div>
+									<a href="" class="sidebar-footer-link">
+										<span>Legal</span>
+									</a>
+								</div>
+
+								<div>
+									<a href="" class="sidebar-footer-link">
+										<span>Safety & Privacy Center</span>
+									</a>
+								</div>
+
+								<div>
+									<a href="" class="sidebar-footer-link">
+										<span>Privacy Policy</span>
+									</a>
+								</div>
+
+								<div>
+									<a href="" class="sidebar-footer-link">
+										<span>Cookies</span>
+									</a>
+								</div>
+
+								<div>
+									<a href="" class="sidebar-footer-link">
+										<span>About Ads</span>
+									</a>
+								</div>
+
+								<div>
+									<a href="" class="sidebar-footer-link">
+										<span>Accessibility</span>
+									</a>
+								</div>
+							</div>
+
+							<a href="#cookies">
+								<span>Cookies</span>
+							</a>
+						</div>
+
+						<div class="lang-button-container">
+							<button class="lang-button">
+								<span class="lang-button-items">
+									<svg
+										width="18px"
+										height="18px"
+										viewBox="0 0 16 16"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M8.5 1a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13zm4.894 4a5.527 5.527 0 0 0-3.053-2.676c.444.84.765 1.74.953 2.676h2.1zm.582 2.995A5.11 5.11 0 0 0 14 7.5a5.464 5.464 0 0 0-.213-1.5h-2.342c.032.331.055.664.055 1a10.114 10.114 0 0 1-.206 2h2.493c.095-.329.158-.665.19-1.005zm-3.535 0l.006-.051A9.04 9.04 0 0 0 10.5 7a8.994 8.994 0 0 0-.076-1H6.576A8.82 8.82 0 0 0 6.5 7a8.98 8.98 0 0 0 .233 2h3.534c.077-.332.135-.667.174-1.005zM10.249 5a8.974 8.974 0 0 0-1.255-2.97C8.83 2.016 8.666 2 8.5 2a3.62 3.62 0 0 0-.312.015l-.182.015L8 2.04A8.97 8.97 0 0 0 6.751 5h3.498zM5.706 5a9.959 9.959 0 0 1 .966-2.681A5.527 5.527 0 0 0 3.606 5h2.1zM3.213 6A5.48 5.48 0 0 0 3 7.5 5.48 5.48 0 0 0 3.213 9h2.493A10.016 10.016 0 0 1 5.5 7c0-.336.023-.669.055-1H3.213zm2.754 4h-2.36a5.515 5.515 0 0 0 3.819 2.893A10.023 10.023 0 0 1 5.967 10zM8.5 12.644A8.942 8.942 0 0 0 9.978 10H7.022A8.943 8.943 0 0 0 8.5 12.644zM11.033 10a10.024 10.024 0 0 1-1.459 2.893A5.517 5.517 0 0 0 13.393 10h-2.36z"
+										/>
+									</svg>
+								</span>
+								English
+							</button>
+						</div>
+					</div>
+				</div>
+			</aside>
+
+			<main>
+				<section class="main-content">
+					<div class="main-content-container">
+						<section class="trending-section">
+							<div class="trending-header">
+								<div class="trending-songs">
+									<h2>
+										<span>
+											<a href="">Trending songs</a>
+										</span>
+									</h2>
+								</div>
+
+								<div class="showall-button">
+									<a href="#">
+										<span>Show all</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="trending-content" style="color: white">
+								Trending section
+							</div>
+						</section>
+
+						<section class="pop-artist-section">
+							<div class="pop-artist-header">
+								<div class="pop-artists">
+									<h2>
+										<span>
+											<a href="">Popular artists</a>
+										</span>
+									</h2>
+								</div>
+
+								<div class="showall-button">
+									<a href="#">
+										<span> Show all </span>
+									</a>
+								</div>
+							</div>
+
+							<div class="pop-artist-content" style="color: white">
+								Popular artist section
+							</div>
+						</section>
+
+						<section class="pop-album-section">
+							<div class="pop-album-header">
+								<div class="pop-albums">
+									<h2>
+										<span>
+											<a href="">Popular albums and singles</a>
+										</span>
+									</h2>
+								</div>
+
+								<div class="showall-button">
+									<a href="#">
+										<span> Show all </span>
+									</a>
+								</div>
+							</div>
+
+							<div class="pop-album-content" style="color: white">
+								Popular album section
+							</div>
+						</section>
+
+						<section class="pop-radio-section">
+							<div class="pop-radio-header">
+								<div class="pop-radio">
+									<h2>
+										<span>
+											<a href="">Popular radio</a>
+										</span>
+									</h2>
+								</div>
+
+								<div class="showall-button">
+									<a href="#">
+										<span> Show all </span>
+									</a>
+								</div>
+							</div>
+
+							<div class="pop-radio-content" style="color: white">
+								Popular radio section
+							</div>
+						</section>
+					</div>
+				</section>
+
+				<div class="main-content-footer"></div>
+			</main>
+		</div>
+
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>

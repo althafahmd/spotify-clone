@@ -1,0 +1,610 @@
+@import url("https://fonts.cdnfonts.com/css/metropolis-2");
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Metropolis", sans-serif;
+	background-color: rgb(00, 00, 00);
+	overflow: hidden;
+}
+
+header nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100vw;
+	box-sizing: border-box;
+	align-items: center;
+	padding: 0.5rem;
+}
+
+div.spotify-logo {
+	width: 4.5rem;
+}
+
+div.spotify-logo a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div.search-section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex: 1;
+	height: max-content;
+	align-self: center;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 0.5rem;
+}
+
+div.search-bar {
+	display: flex;
+	background-color: rgb(34, 34, 34);
+	border-radius: 50px;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	transition: outline 200ms ease, background-color 200ms ease;
+}
+
+div.search-bar:hover {
+	background-color: rgb(52, 52, 52);
+}
+
+div.search-bar:focus-within {
+	border: none;
+	outline: 0.15rem solid rgb(255, 255, 255);
+	outline-offset: -1px;
+	background-color: rgb(52, 52, 52);
+	span.place-holder-text {
+		display: none;
+	}
+}
+
+div.search-bar form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+div.search-icon {
+	display: inline-flex;
+}
+
+button.home-button {
+	background-color: rgb(34, 34, 34);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 3rem;
+	border: none;
+	border-radius: 50px;
+	padding: 0.1rem 0.75rem;
+	margin: 0 0 0 0.5rem;
+	transition: background-color 200ms ease;
+}
+
+button.home-button svg {
+	fill: transparent;
+	stroke: rgb(179, 179, 179);
+	stroke-width: 8px;
+}
+
+button.home-button:hover {
+	background-color: rgb(52, 52, 52);
+}
+
+button.browse-button {
+	display: flex;
+	align-items: center;
+	align-self: center;
+	justify-content: center;
+	border: none;
+	border-radius: 50px;
+	padding: 0px 12px 0px 12px;
+	cursor: pointer;
+	fill: rgb(179, 179, 179);
+	background: transparent;
+}
+
+button.browse-button::before {
+	content: "";
+	width: 1px;
+	height: 1.5rem;
+	background-color: rgb(179, 179, 179);
+}
+
+button.browse-button svg {
+	margin: 0 0 0 0.8rem;
+}
+
+div.search-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 48px;
+	width: 48px;
+	padding: 0;
+}
+
+div.search-icon svg {
+	fill: rgb(179, 179, 179);
+}
+
+div.place-holder {
+	width: max-content;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	height: 24px;
+}
+
+span.place-holder-text {
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: 500;
+}
+
+div.search-bar div {
+	display: flex;
+	align-items: center;
+}
+
+div.search-bar div input {
+	height: 48px;
+}
+
+input.search-bar-text {
+	background-color: transparent;
+	border: none;
+	font-size: 16px;
+	height: 24px;
+	width: 330px;
+	font-size: 16px;
+	font-weight: 600;
+	z-index: 2;
+	outline: none;
+	cursor: text;
+	color: rgb(255, 255, 255);
+}
+
+div.end-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-self: center;
+	justify-content: flex-end;
+	column-gap: 8px;
+	margin: 0;
+}
+
+button.premium-button,
+button.support-button,
+button.download-button,
+a.install-button,
+button.signup-button,
+button.login-button {
+	font-family: "Metropolis", sans-serif;
+	background: none;
+	color: rgb(155, 155, 155);
+	border: none;
+	padding: 0px 12px 0px 12px;
+	cursor: pointer;
+	padding: 0;
+	font-weight: 700;
+}
+
+button.premium-button:hover,
+button.support-button:hover,
+button.download-button:hover,
+a.install-button:hover,
+button.signup-button:hover,
+button.home-button:hover {
+	color: rgb(255, 255, 255);
+	transform: scale(1.03);
+	transition: all 200ms ease;
+}
+
+button.login-button:hover {
+	transform: scale(1.03);
+	transition: all 100ms ease;
+}
+
+a.install-button,
+button.signup-button {
+	font-size: 14px;
+}
+
+button.login-button {
+	background-color: rgb(250, 250, 250);
+	border-radius: 50px;
+	font-size: 16px;
+	height: 48px;
+	color: rgb(00, 00, 00);
+	padding: 8px 32px;
+}
+
+button.signup-button {
+	padding: 4px 16px 4px 8px;
+}
+
+button.premium-button,
+button.support-button,
+button.download-button {
+	font-size: 16px;
+	padding: 8px 0px;
+}
+
+div.separator {
+	width: 1px;
+	height: 25px;
+	background-color: rgb(255, 255, 255);
+	margin: 0px 16px;
+}
+
+a.install-button span.install-img-span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a.install-button span.install-img-span svg {
+	width: 18px;
+	height: 18px;
+	fill: rgb(155, 155, 155);
+	margin: 0 0.4rem 0 0;
+	stroke: rgb(155, 155, 155);
+	stroke-width: 20px;
+	transition: fill 100ms ease, stroke 100ms ease;
+}
+
+a.install-button:hover {
+	svg#Capa_1 {
+		fill: rgb(255, 255, 255);
+		stroke: rgb(255, 255, 255);
+	}
+}
+
+a.install-button span.install-text-span {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: baseline;
+	text-align: center;
+}
+
+a.install-button {
+	display: inline-flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 4px 16px 4px 0px;
+}
+
+div.main-container {
+	display: grid;
+	height: 100%;
+	grid-auto-flow: row;
+	grid-template-columns: 1.5fr 4fr;
+	grid-auto-rows: auto;
+	grid-auto-columns: auto;
+	gap: 0.5rem;
+	padding: 0 0.5rem;
+}
+
+div.side-bar {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: rgb(18, 18, 18);
+	border-radius: 8px;
+	position: relative;
+}
+
+div.sidebar-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0px 4px;
+	padding: 12px 16px 8px;
+}
+
+div.sidebar-header-container {
+	display: flex;
+	flex-direction: column;
+}
+
+div.sidebar-header + div {
+	margin: 0.5rem 1rem;
+}
+
+div.sidebar-header div {
+	display: flex;
+	align-items: center;
+}
+
+div.text-div {
+	margin: 0px auto 0px 0px;
+}
+
+h1.your-library {
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+	margin: 0px 0px 0px 4px;
+}
+
+button.create-playlist-button {
+	background-color: rgb(18, 18, 18);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 35px;
+	width: 35px;
+	border: none;
+	border-radius: 50px;
+	padding: 8px;
+	cursor: pointer;
+	transition: background-color 200ms ease;
+}
+
+button.create-playlist-button:hover {
+	background-color: rgb(34, 34, 34);
+}
+
+div.sidebar-scroll-div {
+	display: block;
+	overflow: auto;
+	overflow-y: scroll;
+	scrollbar-width: none;
+	height: 15.5rem;
+}
+
+div.sidebar-info-div {
+	padding: 0 0.5rem 0.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	justify-content: center;
+}
+
+section.sidebar-info-container {
+	margin: 0.5rem 0;
+	padding: 1rem 1.25rem;
+	background-color: rgba(255, 255, 255, 0.05);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+section.sidebar-info-container > div {
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+	align-items: flex-start;
+	justify-content: center;
+	width: max-content;
+}
+
+section.sidebar-info-container > div > span {
+	display: inline-flex;
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	font-weight: 700;
+}
+
+section.sidebar-info-container > div > span + span {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+button.playlist-button,
+button.podcasts-button {
+	border: none;
+	display: inline-flex;
+	background-color: rgb(250, 250, 250);
+	border-radius: 50px;
+	color: rgb(00, 00, 00);
+	padding: 8px 16px;
+	cursor: pointer;
+	transition: all 100ms ease;
+}
+
+button.playlist-button > span,
+button.podcasts-button > span {
+	font-family: "Metropolis", sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+button.playlist-button:hover,
+button.podcasts-button:hover {
+	transform: scale(1.03);
+	background-color: rgba(250, 250, 250, 0.85);
+}
+
+div.sidebar-footer > span {
+	margin: 0.5rem 1rem;
+}
+
+div.sidebar-footer-link-container {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem 0;
+	padding: 0 1.5rem;
+}
+
+div.sidebar-footer-link-container > a {
+	width: max-content;
+}
+
+div.sidebar-footer-links-list + a {
+	text-decoration: none;
+}
+
+div.sidebar-footer-link-container > a:hover {
+	text-decoration: 1.5px underline rgb(255, 255, 255);
+}
+
+div.sidebar-footer-links-list + a span {
+	font-size: 0.75rem;
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+}
+
+div.sidebar-footer-links-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div.sidebar-footer-links-list div {
+	margin: 0 1rem 0 0;
+}
+
+a.sidebar-footer-link {
+	display: flex;
+	text-decoration: none;
+	margin: 0 0 0.65rem 0;
+}
+
+a.sidebar-footer-link span {
+	font-size: 0.65rem;
+	color: rgb(179, 179, 179);
+	font-weight: 500;
+}
+
+div.lang-button-container {
+	margin: 0px 0px 32px;
+	padding: 0px 24px;
+}
+
+button.lang-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+	font-size: 0.8rem;
+	font-weight: 700;
+	border-radius: 50px;
+	border: 1px solid rgb(124, 124, 124);
+	padding: 0.5rem 1rem 0.5rem 2.25rem;
+	position: relative;
+	cursor: pointer;
+	transition: transform 100ms ease, border 100ms ease;
+}
+
+button.lang-button:hover {
+	transform: scale(1.05);
+	border: 1px solid rgb(255, 255, 255);
+}
+
+button.lang-button > span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+button.lang-button > span > svg {
+	align-self: center;
+	position: absolute;
+	top: 0.45rem;
+	bottom: 0.4rem;
+	left: 0.75rem;
+	fill: rgb(255, 255, 255);
+}
+
+section.main-content {
+	display: flex;
+	background-color: rgb(18, 18, 18);
+	flex-direction: column;
+	padding: 0px 40px;
+	row-gap: 50px;
+	flex-grow: 1;
+	height: 100%;
+	box-sizing: border-box;
+	align-items: center;
+	border-radius: 8px;
+}
+
+div.main-content-container {
+	width: 100%;
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+}
+
+section.trending-section,
+section.pop-artist-section,
+section.pop-album-section,
+section.pop-radio-section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+div.trending-header,
+div.pop-artist-header,
+div.pop-album-header,
+div.pop-radio-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px 0px 8px 0px;
+	width: 100%;
+}
+
+div.trending-songs,
+div.pop-artists,
+div.pop-albums,
+div.pop-radio {
+	display: flex;
+	flex-direction: column;
+	height: 48px;
+	align-items: flex-start;
+	align-self: flex-end;
+	justify-content: flex-end;
+	font-size: 16px;
+}
+
+h2 > span > a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+h2 > span > a:hover {
+	text-decoration: 2px underline rgb(255, 255, 255);
+}
+
+div.showall-button {
+	align-self: flex-end;
+	justify-content: flex-end;
+	height: 100%;
+}
+
+div.showall-button a {
+	display: flex;
+	align-items: flex-end;
+	margin: 2px 8px 0px 0px;
+	border: none;
+	height: 100%;
+	font-weight: 700;
+	font-size: 14px;
+	color: rgb(155, 155, 155);
+	text-decoration: none;
+	background-color: transparent;
+}
+
+div.showall-button a:hover {
+	text-decoration: 1px underline rgb(255, 255, 255);
+}
